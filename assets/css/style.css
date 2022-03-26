@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 600;
-  color: #fff;
+  color: rgb(96, 87, 87);
   white-space: nowrap;
   transition: 0.3s;
 }

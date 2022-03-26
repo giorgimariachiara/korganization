@@ -382,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 #home h1 span {
-  color: #ffc451;
+  color: #84bd00;
 }
 #home h2 {
   color: rgba(255, 255, 255, 0.9);
@@ -532,7 +532,7 @@ section {
   background-color: #ddd;
 }
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: #84bd00;
 }
 
 /*--------------------------------------------------------------
@@ -552,7 +552,7 @@ section {
 .features .icon-box i {
   font-size: 48px;
   float: left;
-  color: #ffc451;
+  color: #84bd00;
 }
 .features .icon-box p {
   font-size: 15px;

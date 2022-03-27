@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
 
-  <link href="assets/img/icon.jpg" rel="icon" type="image/x-icon" >
+  <link href="./img/icon.png" rel="icon" type="image/x-icon" >
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -52,7 +52,7 @@
           <li class="dropdown"><a href="#domain"><span>Study of the domain</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#about">About</a></li> 
-              <li><a href="#portfolio">Items</a></li>
+              <li><a href="#items">Items</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#organization"><span>Knowledge organization</span> <i class="bi bi-chevron-down"></i></a>
@@ -205,168 +205,102 @@
       </div>
     </section><!-- End Cta Section -->
 
-    
-<!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio">
-  <div class="container" data-aos="fade-up">
+    <!-- ======= Items Section ======= -->
+    <section id="items" class="dropdown">
+      <div class="container" data-aos="fade-up">
 
-    <div class="section-title">
-      <h2>Study of the domain</h2>
-      <p>Items</p>
-    </div>
+        <div class="section-title">
+          <h2>Study of the domain</h2>
+          <p>ITEMS</p>
+        </div>
 
-    <div class="row" data-aos="fade-up" data-aos-delay="100">
-      <div class="col-lg-12 d-flex justify-content-center">
-      </div>
-    </div>
-
-    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-          <img src="assets/img/canzone.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>"Giovinezza"</h4>
-            <p>Song</p>
-            <div class="portfolio-links">
-              <a href="assets/img/canzone.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Giovinezza"><i class="bx bx-plus"></i></a>
-              <a href="https://musicbrainz.org/work/0bcd6baf-a0e0-43b7-b8c5-99aeca35a7f3" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="items-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <img src="assets/img/documento.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>"Programma di San Sepolcro"</h4>
-            <p>Document</p>
-            <div class="portfolio-links">
-              <a href="assets/img/documento.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="https://it.wikisource.org/wiki/Manifesto_dei_Fasci_italiani_di_combattimento,_pubblicato_su_%22Il_Popolo_d%27Italia%22_del_6_giugno_1919" title="More Details"><i class="bx bx-link"></i></a>
+        <div class="row items-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 items-item filter-app">
+            <div class="items-wrap">
+              <img src="../img/mussolinispeaks.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="items-links">
+                  <a href="../img/documento.jpg" data-gallery="itemsGallery" class="items-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="items-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-          <img src="assets/img/film.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>"Marcia su Roma"</h4>
-            <p>Movie</p>
-            <div class="portfolio-links">
-              <a href="assets/img/film.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="https://www.imdb.com/title/tt0144294/" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-lg-4 col-md-6 items-item filter-web">
+            <div class="items-wrap">
+              <img src="../img/canzone.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="items-links">
+                  <a href="../img/giornale.jpg" data-gallery="itemsGallery" class="items-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="items-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="assets/img/fotocamicia.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>"Mussolini in black shirt among the quadriumvirs"</h4>
-            <p>Photo</p>
-            <div class="portfolio-links">
-              <a href="assets/img/fotocamicia.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="https://patrimonio.archivioluce.com/luce-web/detail/IL0000012228/10/mussolini-camicia-nera-i-quadriumviri.html?startRelatedPage=9&perPageRelated=9&startPage=$%7bstartPage%7d&query=&jsonVal=%7b%22jsonVal%22%3A%7b%22fieldDate%22%3A%22dataNormal%22%2C%22_perPage%22%3A20%7d%7d" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-lg-4 col-md-6 items-item filter-app">
+            <div class="items-wrap">
+              <img src="../img/film.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="items-links">
+                  <a href="../img/libro.jpg" data-gallery="itemsGallery" class="items-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="items-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <img src="assets/img/fotopiazza.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>San Sepolcro square 1919</h4>
-            <p>Photo</p>
-            <div class="portfolio-links">
-              <a href="assets/img/fotopiazza.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="https://commons.wikimedia.org/wiki/File:Piazza_san_sepolcro_1919.jpg" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-lg-4 col-md-6 items-item filter-card">
+            <div class="items-wrap">
+              <img src="../img/fotopiazza.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="items-links">
+                  <a href="../img/fotocamicia.jpg" data-gallery="itemsGallery" class="items-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="items-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-        <div class="portfolio-wrap">
-          <img src="assets/img/futurismo.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>Futurism</h4>
-            <p>Artistic and social movement</p>
-            <div class="portfolio-links">
-              <a href="assets/img/futurismo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="https://www.wikidata.org/wiki/Q131221" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-lg-4 col-md-6 items-item filter-web">
+            <div class="items-wrap">
+              <img src="../img/futurismo.jpg" class="img-fluid" alt="">
+              <div class="items-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="items-links">
+                  <a href="../img/scultura.jpg" data-gallery="itemsGallery" class="items-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="items-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+
+          
+
       </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="assets/img/giornale.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>"Il popolo d'Italia"</h4>
-            <p>Newspapeer</p>
-            <div class="portfolio-links">
-              <a href="assets/img/giornale.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="https://www.loc.gov/item/sn96058982/" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="assets/img/libro.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>"Riflessioni sulla violenza"</h4>
-            <p>Book</p>
-            <div class="portfolio-links">
-              <a href="assets/img/libro.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="https://archive.org/details/reflectionsonvio00soreuoft/page/n5/mode/2up" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-        <div class="portfolio-wrap">
-          <img src="assets/img/mussolinispeaks.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>"Mussolini Speaks"</h4>
-            <p>Documentary</p>
-            <div class="portfolio-links">
-              <a href="assets/img/mussolinispeaks.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="https://www.imdb.com/title/tt0151676/" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-        <div class="portfolio-wrap">
-          <img src="assets/img/scultura.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <h4>"Forme uniche nella continuità dello spazio"</h4>
-            <p>Sculpture</p>
-            <div class="portfolio-links">
-              <a href="assets/img/scultura.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="https://acervo.mac.usp.br/acervo/index.php/Detail/objects/16845/lang/en_US" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    
-    </div>
-
-  </div>
-</section><!-- End Portfolio Section -->
+    </section><!-- End Items Section -->
 
 
     <!-- Conceptual Map Section-->
@@ -380,7 +314,7 @@
           Once the items were identified, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
           </p>
           <p>
-            <img src="assets/img/Conceptualmap.png" class="img-fluid" alt="Conceptual Map" style="padding-top: 50px;">
+            <img src="assets" class="img-fluid" alt="Conceptual Map" style="padding-top: 20px;">
           </p>
       </div>
     </section> <!-- End Conceptual Model -->

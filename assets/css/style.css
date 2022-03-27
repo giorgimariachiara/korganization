@@ -614,7 +614,7 @@ section {
 }
 .items #items-flters {
   padding: 0;
-  margin: auto auto auto auto;
+  margin: 0px auto 20px auto;
   list-style: none;
   text-align: center;
 }

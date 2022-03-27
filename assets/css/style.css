@@ -213,11 +213,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 10px 0;
   z-index: 99;
-  opacity: 0.5;
   visibility: hidden;
-  background: #6f624e;
-
-
+  background: rgba(111, 98, 78, 0.5);
   transition: 0.3s;
 }
 .navbar .dropdown ul li {

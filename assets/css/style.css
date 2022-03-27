@@ -607,18 +607,18 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Items
+# Portfolio
 --------------------------------------------------------------*/
-.items .items-item {
+.portfolio .portfolio-item {
   margin-bottom: 30px;
 }
-.items #items-flters {
+.portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
-.items #items-flters li {
+.portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 15px 10px 15px;
@@ -631,21 +631,21 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
 }
-.items #items-flters li:hover, .items #items-flters li.filter-active {
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #151515;
-  background: #84bd00;
+  background: #ffc451;
 }
-.items #items-flters li:last-child {
+.portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
-.items .items-wrap {
+.portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   background: rgba(21, 21, 21, 0.6);
 }
-.items .items-wrap::before {
+.portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(21, 21, 21, 0.6);
   position: absolute;
@@ -657,10 +657,10 @@ section {
   z-index: 2;
   opacity: 0;
 }
-.items .items-wrap img {
+.portfolio .portfolio-wrap img {
   transition: all ease-in-out 0.3s;
 }
-.items .items-wrap .items-info {
+.portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -675,12 +675,12 @@ section {
   align-items: flex-start;
   padding: 20px;
 }
-.items .items-wrap .items-info h4 {
+.portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
 }
-.items .items-wrap .items-info p {
+.portfolio .portfolio-wrap .portfolio-info p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   text-transform: uppercase;
@@ -688,84 +688,83 @@ section {
   margin: 0;
   font-style: italic;
 }
-.items .items-wrap .items-links {
+.portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
   z-index: 4;
 }
-.items .items-wrap .items-links a {
+.portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 5px 0 0;
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
 }
-.items .items-wrap .items-links a:hover {
-  color: #84bd00;
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #ffc451;
 }
-.items .items-wrap:hover::before {
+.portfolio .portfolio-wrap:hover::before {
   opacity: 1;
 }
-.items .items-wrap:hover img {
+.portfolio .portfolio-wrap:hover img {
   transform: scale(1.2);
 }
-.items .items-wrap:hover .items-info {
+.portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
 
 /*--------------------------------------------------------------
-# Items Details
+# Portfolio Details
 --------------------------------------------------------------*/
-.items-details {
+.portfolio-details {
   padding-top: 40px;
 }
-.items-details .items-details-slider img {
+.portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
-.items-details .items-details-slider .swiper-pagination {
+.portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-.items-details .items-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #84bd00;
+  border: 1px solid #ffc451;
 }
-.items-details .items-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #84bd00;
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffc451;
 }
-.items-details .portfolio-info {
+.portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(21, 21, 21, 0.08);
 }
-.items-details .items-info h3 {
+.portfolio-details .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
-.items-details .items-info ul {
+.portfolio-details .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-.items-details .items-info ul li + li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
-.items-details .items-description {
+.portfolio-details .portfolio-description {
   padding-top: 30px;
 }
-.items-details .items-description h2 {
+.portfolio-details .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.items-details .items-description p {
+.portfolio-details .portfolio-description p {
   padding: 0;
 }
-
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/

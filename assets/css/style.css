@@ -465,7 +465,7 @@ section {
 .section-title h2::after {
   content: "";
   width: 120px;
-  height: 1px;
+  height: 7px;
   display: inline-block;
   background:#84bd00;
   margin: 4px 10px;
@@ -771,7 +771,7 @@ section {
 # Conceptual map
 --------------------------------------------------------------*/
 
-.map { text-align: center;}
+.map 
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/

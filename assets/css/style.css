@@ -610,7 +610,7 @@ section {
 # Items
 --------------------------------------------------------------*/
 .items .items-item {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 .items #items-flters {
   padding: 0;

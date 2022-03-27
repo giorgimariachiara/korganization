@@ -618,7 +618,7 @@ section {
   list-style: none;
   text-align: center;
 }
-.items #portfolio-flters li {
+.items #items-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 15px 10px 15px;
@@ -631,11 +631,11 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 3px;
 }
-.items #portfolio-flters li:hover, .items #portfolio-flters li.filter-active {
+.items #items-flters li:hover, .items #items-flters li.filter-active {
   color: #151515;
   background: #84bd00;
 }
-.items #portfolio-flters li:last-child {
+.items #items-flters li:last-child {
   margin-right: 0;
 }
 .items .items-wrap {
@@ -713,56 +713,56 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Items Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.items-details {
   padding-top: 40px;
 }
-.portfolio-details .portfolio-details-slider img {
+.items-details .items-details-slider img {
   width: 100%;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.items-details .items-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.items-details .items-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #84bd00;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.items-details .items-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #84bd00;
 }
-.portfolio-details .portfolio-info {
+.items-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(21, 21, 21, 0.08);
 }
-.portfolio-details .portfolio-info h3 {
+.items-details .items-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
-.portfolio-details .portfolio-info ul {
+.items-details .items-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-.portfolio-details .portfolio-info ul li + li {
+.items-details .items-info ul li + li {
   margin-top: 10px;
 }
-.portfolio-details .portfolio-description {
+.items-details .items-description {
   padding-top: 30px;
 }
-.portfolio-details .portfolio-description h2 {
+.items-details .items-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.portfolio-details .portfolio-description p {
+.items-details .items-description p {
   padding: 0;
 }
 

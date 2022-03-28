@@ -538,7 +538,32 @@ section {
 
 /*--------------------------------------------------------------
 
+/*--------------------------------------------------------------
+# zoom immagine prova
+--------------------------------------------------------------*/
+.zoom-container {
+	width: 400px;
+	height: 222px;
+	position: relative;
+	overflow: hidden;
+}
+.zoom-container img {
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 222px;
+	opacity: 0.5;
+	transition: all 500ms ease-in;
+	position: absolute;	
+}
 
+  .zoom-container img:hover {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    width: 900px;	
+    height: 500px;
+  }
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/

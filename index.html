@@ -803,8 +803,8 @@
                     <td>561 $5</td> <!-- MARC21 -->
                     <td>Owner/Agent<br/>Owner/Agent Role</td> <!-- CDWA -->
                     <td>crm:E74_Group</td>
-
-                    <!--mi sono fermata qua a modificare -->
+                    <td>/</td>
+                    <td>frbroo:F11_Corporate_Body</td>
                   </tr>
 
                   <tr>
@@ -814,13 +814,13 @@
                     <td>CreativeWork.contributor<br/>CreativeWork.Contributor.Role</td> <!-- Schema.org -->
                     <td>700 1# $a</td> <!-- MARC21 -->
                     <td>Creator Description<br/>Creator Identity<br/>Creator Role</td> <!-- CDWA -->
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
                   </tr>
 
                 </tbody>
               </table>
-
-
-
               
 
               <p> </p> <!-- Spacer -->
@@ -843,6 +843,9 @@
                     <th>Schema.org</th>
                     <th>MARC21</th>
                     <th>CDWA</th>
+                    <th>CIDOC-CRM</th>
+                    <th>Exif</th>
+                    <th>FRBRoo</th>
                   </tr>
                 </thead>
 
@@ -854,15 +857,21 @@
                     <td>CreativeWork.locationCreated<br/>Movie.countryOfOrigin</td> <!-- Schema.org -->
                     <td>264 #0 $a</td> <!-- MARC21 -->
                     <td>Creation Place/Original Location<br/>Place Qualifier</td> <!-- CDWA -->
+                    <td>Crm:E53_Place</td>
+                    <td>/</td>
+                    <td>frbroo:F9_Place</td>
                   </tr>
 
                   <tr>
-                    <th>Place of publication</th> <!-- property -->
+                    <th>Place depicted</th> <!-- property -->
                     <td>coverage.spatial</td> <!-- DCTerms -->
                     <td>N/A</td> <!-- MMD -->
-                    <td>PublicationEvent.location</td> <!-- Schema.org -->
-                    <td>264 #1 $a</td> <!-- MARC21 -->
-                    <td>Creation Place/Original Location<br/>Place Qualifier</td> <!-- CDWA -->
+                    <td>CreativeWork.contentLocation</td> <!-- Schema.org -->
+                    <td>651 $a</td> <!-- MARC21 -->
+                    <td>Place/Location Label/Identification</td> <!-- CDWA -->
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
                   </tr>
 
                   <tr>
@@ -872,6 +881,8 @@
                     <td>Place</td> <!-- Schema.org -->
                     <td>852 $a</td> <!-- MARC21 -->
                     <td>Current Location Description<br/>Repository/Geographic Location</td> <!-- CDWA -->
+                    <td></td>
+                  <!--ho smesso di modificare -->
                   </tr>
 
                   <tr>
@@ -883,14 +894,7 @@
                     <td>Related Work Label/Identification<br/>Work Relationship Type</td> <!-- CDWA -->
                   </tr>
 
-                  <tr>
-                    <th>Place depicted</th> <!-- property -->
-                    <td>coverage.spatial</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>CreativeWork.contentLocation</td> <!-- Schema.org -->
-                    <td>651 $a</td> <!-- MARC21 -->
-                    <td>Place/Location Label/Identification</td> <!-- CDWA -->
-                  </tr>
+                  
 
                 </tbody>
               </table>
@@ -915,6 +919,9 @@
                     <th>Schema.org</th>
                     <th>MARC21</th>
                     <th>CDWA</th>
+                    <th>CIDOC-CRM</th>
+                    <th>Exif</th>
+                    <th>FRBRoo</th>
                   </tr>
                 </thead>
 
@@ -967,6 +974,9 @@
                     <th>Schema.org</th>
                     <th>MARC21</th>
                     <th>CDWA</th>
+                    <th>CIDOC-CRM</th>
+                    <th>Exif</th>
+                    <th>FRBRoo</th>
                   </tr>
                 </thead>
 

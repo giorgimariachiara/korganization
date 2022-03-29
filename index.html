@@ -762,6 +762,9 @@
                     <th>Schema.org</th>
                     <th>MARC21</th>
                     <th>CDWA</th>
+                    <th>CIDOC-CRM</th>
+                    <th>Exif</th>
+                    <th>FRBRoo</th>
                   </tr>
                 </thead>
 
@@ -773,6 +776,10 @@
                     <td>CreativeWork.creator<br/>CreativeWork.author<br/>Movie.director</td> <!-- Schema.org -->
                     <td>100 1# $a</td> <!-- MARC21 -->
                     <td>Creator Description<br/>Creator Identity<br/>Creator Role</td> <!-- CDWA -->
+                    <td>crm:E39_Actor</td> <!--Cidoc-->
+                    <td>Artist</td>
+                    <td>frbroo:F10_Person</td>
+                
                   </tr>
 
                   <tr>
@@ -782,28 +789,39 @@
                     <td>CreativeWork.publisher</td> <!-- Schema.org -->
                     <td>264 #0 $b</td> <!-- MARC21 -->
                     <td>Creator Description<br/>Creator Identity<br/>Creator Role</td> <!-- CDWA -->
+                    <td>crm:E39_Actor</td> <!--Cidoc-->
+                    <td>/</td>
+                    <td>frbroo:F11_Corporate_Body</td>
                   </tr>
 
-                  <tr>
-                    <th>Contributor</th> <!-- property -->
-                    <td>contributor</td> <!-- DCTerms -->
-                    <td>&lt;name&gt;&lt;namePart&gt;</td> <!-- MMD -->
-                    <td>CreativeWork.contributor<br/>CreativeWork.Contributor.Role</td> <!-- Schema.org -->
-                    <td>700 1# $a</td> <!-- MARC21 -->
-                    <td>Creator Description<br/>Creator Identity<br/>Creator Role</td> <!-- CDWA -->
-                  </tr>
-
+            
                   <tr>
                     <th>Institution</th> <!-- property -->
                     <td>rightsHolder</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
+                    <td>/</td> <!-- MMD -->
                     <td>CreativeWork.archivedAt</td> <!-- Schema.org -->
                     <td>561 $5</td> <!-- MARC21 -->
                     <td>Owner/Agent<br/>Owner/Agent Role</td> <!-- CDWA -->
+                    <td>crm:E74_Group</td>
+
+                    <!--mi sono fermata qua a modificare -->
+
+                 
                   </tr>
 
                 </tbody>
               </table>
+
+
+
+              <tr>
+                <th>Contributor</th> <!-- property -->
+                <td>contributor</td> <!-- DCTerms -->
+                <td>&lt;name&gt;&lt;namePart&gt;</td> <!-- MMD -->
+                <td>CreativeWork.contributor<br/>CreativeWork.Contributor.Role</td> <!-- Schema.org -->
+                <td>700 1# $a</td> <!-- MARC21 -->
+                <td>Creator Description<br/>Creator Identity<br/>Creator Role</td> <!-- CDWA -->
+              </tr>
 
               <p> </p> <!-- Spacer -->
 

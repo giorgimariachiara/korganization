@@ -702,6 +702,425 @@
       </div>
     </section><!-- End Testimonials Section -->
 
+
+
+
+
+
+
+     <!-- Metadata Alignment-->
+     <section id="metadataAlignment" class="metadataAlignment">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Metadata</h2>
+          <h3>METADATA ALIGNMENT</h3>
+        </div>
+
+        <p>In the Metadata Alignment’s phase, some useful properties were taken from each metadata standard identified during the Metadata Analysis. <p>
+        <p><strong>DCTerms</strong>, even if not found in the descriptions of the items, was selected as a starter for the alignment. Dublin Core is in fact one of the most used formats on the web for describing resources and has been indicated as a standard format within the <a href="https://en.wikipedia.org/wiki/Open_Archives_Initiative" target="_blank"><b>Open Archive Initiative.</b></a> DCTerms extends the 15 core DC classes.</p>
+
+        <p>Regarding <b>MARC</b> and <b>MARCXML</b>, no distinction was made. Although they are referred to as separate standards, they actually share the same classes, just in different formats. Furthermore, <b>MARC 21</b> has been inserted in the alignment table being it the most recent version and the one currently documented, which integrates some different national variants used mostly in Anglo-Saxon countries.</p>
+
+        <p>For accessibility reasons, all the properties have been divided into four categories: WHO, WHERE, WHEN, and WHAT.<br/><br/></p>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <!-- <ul id="portfolio-flters"> -->
+            <ul class="nav nav-tabs" id="alignmentTab" role="tablist">
+              <!-- <li class="filter-active"> -->
+              <li class="nav-item" role="presentation"> <!-- <a href="#tab-1">who</a></li>  data-filter="*" -->
+                <button class="nav-link active" id="who-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">WHO</button>
+              </li>
+              <li class="nav-item" role="presentation"> <!-- <a href="#tab-2">where</a></li> data-filter=".filter-app" -->
+                <button class="nav-link" id="where-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">WHERE</button>
+              </li>
+              <li class="nav-item" role="presentation"> <!-- <a href="#tab-3">when</a></li>  data-filter=".filter-card" -->
+                <button class="nav-link" id="when-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">WHEN</button>
+              </li>
+              <li class="nav-item" role="presentation"> <!-- <a href="#tab-4">what</a></li> data-filter=".filter-web" -->
+                <button class="nav-link" id="what-tab" data-bs-toggle="tab" data-bs-target="#tab-4" type="button" role="tab" aria-controls="tab-4" aria-selected="false">WHAT</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="tab-content" id="alignmentTabContent">
+
+          <div class="tab-pane show active" id="tab-1" role="tabpanel" aria-labelledby="who-tab"> <!-- WHO -->
+            <div id="tableWHO">
+              <h2>WHO</h2>
+
+              <table class="table table-striped table-responsive">
+
+                <thead> <!-- table header -->
+                  <tr>
+                    <th>Property</th>
+                    <th>DCTerms</th>
+                    <th>MMD</th>
+                    <th>Schema.org</th>
+                    <th>MARC21</th>
+                    <th>CDWA</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>Creator</th> <!-- property -->
+                    <td>creator</td> <!-- DCTerms -->
+                    <td>&lt;artist&gt;&lt;name&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.creator<br/>CreativeWork.author<br/>Movie.director</td> <!-- Schema.org -->
+                    <td>100 1# $a</td> <!-- MARC21 -->
+                    <td>Creator Description<br/>Creator Identity<br/>Creator Role</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Publisher</th> <!-- property -->
+                    <td>publisher</td> <!-- DCTerms -->
+                    <td>&lt;label&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.publisher</td> <!-- Schema.org -->
+                    <td>264 #0 $b</td> <!-- MARC21 -->
+                    <td>Creator Description<br/>Creator Identity<br/>Creator Role</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Contributor</th> <!-- property -->
+                    <td>contributor</td> <!-- DCTerms -->
+                    <td>&lt;name&gt;&lt;namePart&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.contributor<br/>CreativeWork.Contributor.Role</td> <!-- Schema.org -->
+                    <td>700 1# $a</td> <!-- MARC21 -->
+                    <td>Creator Description<br/>Creator Identity<br/>Creator Role</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Institution</th> <!-- property -->
+                    <td>rightsHolder</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>CreativeWork.archivedAt</td> <!-- Schema.org -->
+                    <td>561 $5</td> <!-- MARC21 -->
+                    <td>Owner/Agent<br/>Owner/Agent Role</td> <!-- CDWA -->
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <p> </p> <!-- Spacer -->
+
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="where-tab"> <!-- WHERE -->
+            <div id="tableWHERE">
+              <h2>WHERE</h2>
+
+              <table class="table table-striped table-responsive">
+
+                <thead> <!-- table header -->
+                  <tr>
+                    <th>Property</th>
+                    <th>DCTerms</th>
+                    <th>MMD</th>
+                    <th>Schema.org</th>
+                    <th>MARC21</th>
+                    <th>CDWA</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>Place of production</th> <!-- property -->
+                    <td>coverage.spatial</td> <!-- DCTerms -->
+                    <td>&lt;place-list&gt;&lt;place-element&gt;&lt;place&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.locationCreated<br/>Movie.countryOfOrigin</td> <!-- Schema.org -->
+                    <td>264 #0 $a</td> <!-- MARC21 -->
+                    <td>Creation Place/Original Location<br/>Place Qualifier</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Place of publication</th> <!-- property -->
+                    <td>coverage.spatial</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>PublicationEvent.location</td> <!-- Schema.org -->
+                    <td>264 #1 $a</td> <!-- MARC21 -->
+                    <td>Creation Place/Original Location<br/>Place Qualifier</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Current place</th> <!-- property -->
+                    <td>LocationPeriodOrJurisdiction.location</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>Place</td> <!-- Schema.org -->
+                    <td>852 $a</td> <!-- MARC21 -->
+                    <td>Current Location Description<br/>Repository/Geographic Location</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Contained in</th> <!-- property -->
+                    <td>relation.isPartOf</td> <!-- DCTerms -->
+                    <td>&lt;release&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.isPartOf</td> <!-- Schema.org -->
+                    <td>773</td> <!-- MARC21 -->
+                    <td>Related Work Label/Identification<br/>Work Relationship Type</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Place depicted</th> <!-- property -->
+                    <td>coverage.spatial</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>CreativeWork.contentLocation</td> <!-- Schema.org -->
+                    <td>651 $a</td> <!-- MARC21 -->
+                    <td>Place/Location Label/Identification</td> <!-- CDWA -->
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <p> </p> <!-- Spacer -->
+
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="when-tab"> <!-- WHEN -->
+            <div id="tableWHEN">
+              <h2>WHEN</h2>
+
+              <table class="table table-striped table-responsive">
+
+                <thead> <!-- table header -->
+                  <tr>
+                    <th>Property</th>
+                    <th>DCTerms</th>
+                    <th>MMD</th>
+                    <th>Schema.org</th>
+                    <th>MARC21</th>
+                    <th>CDWA</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>Creation date</th> <!-- property -->
+                    <td>date.created</td> <!-- DCTerms -->
+                    <td> </td> <!-- MMD -->
+                    <td>CreativeWork.dateCreated</td> <!-- Schema.org -->
+                    <td>264 #0 $c</td> <!-- MARC21 -->
+                    <td>Creation Date<br/>Date Qualifier</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Publishing date</th> <!-- property -->
+                    <td>date.issued</td> <!-- DCTerms -->
+                    <td>&lt;release&gt;&lt;date&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.datePublished</td> <!-- Schema.org -->
+                    <td>264 #1 $c</td> <!-- MARC21 -->
+                    <td>Creation Date<br/>Date Qualifier</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Period depicted</th> <!-- property -->
+                    <td>coverage.temporal</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>CreativeWork.temporalCoverage</td> <!-- Schema.org -->
+                    <td>045</td> <!-- MARC21 -->
+                    <td>Styles/Periods/Groups/Movements</td> <!-- CDWA -->
+                  </tr>
+
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="what-tab"> <!-- WHAT -->
+            <div id="tableWHAT">
+              <h2>WHAT</h2>
+
+              <table class="table table-striped table-responsive">
+
+                <thead> <!-- table header -->
+                  <tr>
+                    <th>Property</th>
+                    <th>DCTerms</th>
+                    <th>MMD</th>
+                    <th>Schema.org</th>
+                    <th>MARC21</th>
+                    <th>CDWA</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>Title</th> <!-- property -->
+                    <td>title</td> <!-- DCTerms -->
+                    <td>&lt;release&gt;&lt;title&gt;</td> <!-- MMD -->
+                    <td>Thing.name</td> <!-- Schema.org -->
+                    <td>130 $a</td> <!-- MARC21 -->
+                    <td>Title Text</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Identifier</th> <!-- property -->
+                    <td>identifier</td> <!-- DCTerms -->
+                    <td>&lt;track id&gt;</td> <!-- MMD -->
+                    <td>Thing.idientifier</td> <!-- Schema.org -->
+                    <td>020 - 022 - 024</td> <!-- MARC21 -->
+                    <td>Repository Numbers<br/>Number Type</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Description</th> <!-- property -->
+                    <td>description</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>Thing.description</td> <!-- Schema.org -->
+                    <td>3XX</td> <!-- MARC21 -->
+                    <td>Descriptive Note Text<br/>Abstract Description</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Subject</th> <!-- property -->
+                    <td>subject</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>CreativeWork.about</td> <!-- Schema.org -->
+                    <td>6XX</td> <!-- MARC21 -->
+                    <td>Subject Display</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Abstract</th> <!-- property -->
+                    <td>description.abstract</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>Article.abstract</td> <!-- Schema.org -->
+                    <td>520 3# $a</td> <!-- MARC21 -->
+                    <td>Subject Display</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Language</th> <!-- property -->
+                    <td>language</td> <!-- DCTerms -->
+                    <td>&lt;work&gt;&lt;language-list&gt;&lt;language&gt;<br/>&lt;text-representation language&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.inLanguage<br/>Movie.subtitleLanguage</td> <!-- Schema.org -->
+                    <td>041</td> <!-- MARC21 -->
+                    <td>Inscription Language</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Material support</th> <!-- property -->
+                    <td>medium</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>CreativeWork.material</td> <!-- Schema.org -->
+                    <td>340 ## $e</td> <!-- MARC21 -->
+                    <td>Materials/Techniques Flag<br/>Materials/Techniques Name</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Dimensions</th> <!-- property -->
+                    <td>format</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>CreativeWork.size</td> <!-- Schema.org -->
+                    <td>300 ## $c</td> <!-- MARC21 -->
+                    <td>Dimensions Type<br/>Dimensions Description</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Technique / Genre</th> <!-- property -->
+                    <td>type</td> <!-- DCTerms -->
+                    <td>&lt;genre-list&gt;&lt;genre&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.genre</td> <!-- Schema.org -->
+                    <td>340 ## $d</td> <!-- MARC21 -->
+                    <td>Materials/Techniques Flag<br/>Materials/Techniques Name</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Duration</th> <!-- property -->
+                    <td>format.extent</td> <!-- DCTerms -->
+                    <td>&lt;duration&gt;</td> <!-- MMD -->
+                    <td>Movie.duration<br/>MediaObject.duration<br/>MusicRelease.duration</td> <!-- Schema.org -->
+                    <td>306 ## $a</td> <!-- MARC21 -->
+                    <td>Dimensions Type<br/>Dimensions Description</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Start page</th> <!-- property -->
+                    <td>N/A</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>Article.pageStart</td> <!-- Schema.org -->
+                    <td>773 $q</td> <!-- MARC21 -->
+                    <td>N/A</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>End page</th> <!-- property -->
+                    <td>N/A</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>Article.pageEnd</td> <!-- Schema.org -->
+                    <td>N/A</td> <!-- MARC21 -->
+                    <td>N/A</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Citation</th> <!-- property -->
+                    <td>identifier.bibliographicCitation</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>CreativeWork.citation</td> <!-- Schema.org -->
+                    <td>510 $a</td> <!-- MARC21 -->
+                    <td>Related Textual References</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Word count</th> <!-- property -->
+                    <td>format.extent</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>Article.wordCount</td> <!-- Schema.org -->
+                    <td>N/A</td> <!-- MARC21 -->
+                    <td>N/A</td> <!-- CDWA -->
+                  </tr>
+
+                  <tr>
+                    <th>Access rights</th> <!-- property -->
+                    <td>rights.accessRights</td> <!-- DCTerms -->
+                    <td>N/A</td> <!-- MMD -->
+                    <td>DigitalDocument.hasDigitalDocumentPermission</td> <!-- Schema.org -->
+                    <td>506</td> <!-- MARC21 -->
+                    <td>N/A</td> <!-- CDWA -->
+                  </tr>
+
+
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+
+          <br/><br>
+
+        </div>
+
+      </section>
+
+
+      <!-- Background effect SEPARATOR -->
+      <section id="separatorThree" class="separatorThree">
+        <div class="container" data-aos="zoom-in">
+
+        </div>
+      </section><!-- End metadata alignment separator -->
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
       <div class="container" data-aos="fade-up">

@@ -895,15 +895,19 @@ section {
 --------------------------------------------------------------*/
 #who-tab {
   font-size: large;
+  font-style: bold;
 }
 #where-tab {
   font-size: large;
+  font-style: bold;
 }
 #when-tab {
   font-size: large;
+  font-style: bold;
 }
 #what-tab {
   font-size: large;
+  font-style: bold;
 }
 
 

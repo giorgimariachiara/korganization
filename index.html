@@ -730,7 +730,7 @@
             <ul class="nav nav-tabs" id="alignmentTab" role="tablist">
               <!-- <li class="filter-active"> -->
               <li class="nav-item" role="presentation"> <!-- <a href="#tab-1">who</a></li>  data-filter="*" -->
-                <button class="nav-link active" id="who-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true" style="color: #84bd00; font-style: bold;">WHO</button>
+                <button class="nav-link active" id="who-tab" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true" style="color: #84bd00;"><b>WHO</b></button>
               </li>
               <li class="nav-item" role="presentation"> <!-- <a href="#tab-2">where</a></li> data-filter=".filter-app" -->
                 <button class="nav-link" id="where-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false" style="color: #84bd00;">WHERE</button>
@@ -881,7 +881,9 @@
                     <td>Place</td> <!-- Schema.org -->
                     <td>852 $a</td> <!-- MARC21 -->
                     <td>Current Location Description<br/>Repository/Geographic Location</td> <!-- CDWA -->
-                    <td></td>
+                    <td>crm:E53_Place</td>
+                    <td>/</td>
+                    <td>frbroo:F9_Place</td>
                   <!--ho smesso di modificare -->
                   </tr>
 
@@ -892,9 +894,10 @@
                     <td>CreativeWork.isPartOf</td> <!-- Schema.org -->
                     <td>773</td> <!-- MARC21 -->
                     <td>Related Work Label/Identification<br/>Work Relationship Type</td> <!-- CDWA -->
+                    <td>crm:E53_Place</td>
+                    <td>/</td>
+                    <td>frbroo:F9_Place</td>
                   </tr>
-
-                  
 
                 </tbody>
               </table>
@@ -933,6 +936,10 @@
                     <td>CreativeWork.dateCreated</td> <!-- Schema.org -->
                     <td>264 #0 $c</td> <!-- MARC21 -->
                     <td>Creation Date<br/>Date Qualifier</td> <!-- CDWA -->
+                    <td>crm:E52_Time_Span</td>
+                    <td>DateTime</td>
+                    <td>frbroo:F29_Recording_Event</td>
+                  
                   </tr>
 
                   <tr>
@@ -942,6 +949,9 @@
                     <td>CreativeWork.datePublished</td> <!-- Schema.org -->
                     <td>264 #1 $c</td> <!-- MARC21 -->
                     <td>Creation Date<br/>Date Qualifier</td> <!-- CDWA -->
+                    <td>crm:E52_Time_Span</td>
+                    <td>/</td>
+                    <td>frbroo:F30_Publication_Event</td>
                   </tr>
 
                   <tr>
@@ -951,6 +961,9 @@
                     <td>CreativeWork.temporalCoverage</td> <!-- Schema.org -->
                     <td>045</td> <!-- MARC21 -->
                     <td>Styles/Periods/Groups/Movements</td> <!-- CDWA -->
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
                   </tr>
 
                 </tbody>
@@ -988,15 +1001,81 @@
                     <td>Thing.name</td> <!-- Schema.org -->
                     <td>130 $a</td> <!-- MARC21 -->
                     <td>Title Text</td> <!-- CDWA -->
+                    <td>crm:E35_Title</td>
+                    <td>DocumentName</td>
+                    <td>frbroo: </td>
                   </tr>
 
                   <tr>
-                    <th>Identifier</th> <!-- property -->
-                    <td>identifier</td> <!-- DCTerms -->
-                    <td>&lt;track id&gt;</td> <!-- MMD -->
-                    <td>Thing.idientifier</td> <!-- Schema.org -->
-                    <td>020 - 022 - 024</td> <!-- MARC21 -->
-                    <td>Repository Numbers<br/>Number Type</td> <!-- CDWA -->
+                    <th>Type</th> <!-- property -->
+                    <td>/</td> <!-- DCTerms -->
+                    <td>/</td> <!-- MMD -->
+                    <td>/</td> <!-- Schema.org -->
+                    <td>/</td> <!-- MARC21 -->
+                    <td>/</td> <!-- CDWA -->
+                    <td>crm:E55_Type</td>
+                    <td>SubfileType</td>
+                    <td>frbroo:F3_Manifestation_Product_Type</td>
+                  </tr>
+
+                  <tr>
+                    <th>Subject</th> <!-- property -->
+                    <td>subject</td> <!-- DCTerms -->
+                    <td>/</td> <!-- MMD -->
+                    <td>CreativeWork.about</td> <!-- Schema.org -->
+                    <td>6XX</td> <!-- MARC21 -->
+                    <td>Subject Display</td> <!-- CDWA -->
+                    <td>crm:E1_CRM_Entity</td>
+                    <td>ImageDescrition</td>
+                    <td>frbroo: </td>
+                  </tr>
+
+                  <tr>
+                    <th>Language</th> <!-- property -->
+                    <td>language</td> <!-- DCTerms -->
+                    <td>&lt;work&gt;&lt;language-list&gt;&lt;language&gt;<br/>&lt;text-representation language&gt;</td> <!-- MMD -->
+                    <td>CreativeWork.inLanguage<br/>Movie.subtitleLanguage</td> <!-- Schema.org -->
+                    <td>041</td> <!-- MARC21 -->
+                    <td>Inscription Language</td> <!-- CDWA -->
+                    <td>crm:E56_Language</td>
+                    <td>/</td>
+                    <td>frbroo:E56_Language</td>
+                  </tr>
+
+                  <tr>
+                    <th>Material</th> <!-- property -->
+                    <td>medium</td> <!-- DCTerms -->
+                    <td>/</td> <!-- MMD -->
+                    <td>CreativeWork.material</td> <!-- Schema.org -->
+                    <td>340 ## $e</td> <!-- MARC21 -->
+                    <td>Materials/Techniques Flag<br/>Materials/Techniques Name</td> <!-- CDWA -->
+                    <td>crm:E57_Material</td>
+                    <td>/</td>
+                    <td>/</td>
+                  </tr>
+
+                  <tr>
+                    <th>Dimensions</th> <!-- property -->
+                    <td>format</td> <!-- DCTerms -->
+                    <td>/</td> <!-- MMD -->
+                    <td>CreativeWork.size</td> <!-- Schema.org -->
+                    <td>300 ## $c</td> <!-- MARC21 -->
+                    <td>Dimensions Type<br/>Dimensions Description</td> <!-- CDWA -->
+                    <td>crm:E54_Dimension</td>
+                    <td>/</td>
+                    <td>frbroo:</td>
+                  </tr>
+
+                  <tr>
+                    <th>Duration</th> <!-- property -->
+                    <td>format.extent</td> <!-- DCTerms -->
+                    <td>&lt;duration&gt;</td> <!-- MMD -->
+                    <td>Movie.duration<br/>MediaObject.duration<br/>MusicRelease.duration</td> <!-- Schema.org -->
+                    <td>306 ## $a</td> <!-- MARC21 -->
+                    <td>Dimensions Type<br/>Dimensions Description</td> <!-- CDWA -->
+                    <td>crm:E54_Duration</td>
+                    <td>/</td>
+                    <td>frbroo:</td>
                   </tr>
 
                   <tr>
@@ -1009,113 +1088,16 @@
                   </tr>
 
                   <tr>
-                    <th>Subject</th> <!-- property -->
-                    <td>subject</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>CreativeWork.about</td> <!-- Schema.org -->
-                    <td>6XX</td> <!-- MARC21 -->
-                    <td>Subject Display</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Abstract</th> <!-- property -->
-                    <td>description.abstract</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>Article.abstract</td> <!-- Schema.org -->
-                    <td>520 3# $a</td> <!-- MARC21 -->
-                    <td>Subject Display</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Language</th> <!-- property -->
-                    <td>language</td> <!-- DCTerms -->
-                    <td>&lt;work&gt;&lt;language-list&gt;&lt;language&gt;<br/>&lt;text-representation language&gt;</td> <!-- MMD -->
-                    <td>CreativeWork.inLanguage<br/>Movie.subtitleLanguage</td> <!-- Schema.org -->
-                    <td>041</td> <!-- MARC21 -->
-                    <td>Inscription Language</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Material support</th> <!-- property -->
-                    <td>medium</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>CreativeWork.material</td> <!-- Schema.org -->
-                    <td>340 ## $e</td> <!-- MARC21 -->
-                    <td>Materials/Techniques Flag<br/>Materials/Techniques Name</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Dimensions</th> <!-- property -->
-                    <td>format</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>CreativeWork.size</td> <!-- Schema.org -->
-                    <td>300 ## $c</td> <!-- MARC21 -->
-                    <td>Dimensions Type<br/>Dimensions Description</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Technique / Genre</th> <!-- property -->
+                    <th>Technique</th> <!-- property -->
                     <td>type</td> <!-- DCTerms -->
                     <td>&lt;genre-list&gt;&lt;genre&gt;</td> <!-- MMD -->
                     <td>CreativeWork.genre</td> <!-- Schema.org -->
                     <td>340 ## $d</td> <!-- MARC21 -->
                     <td>Materials/Techniques Flag<br/>Materials/Techniques Name</td> <!-- CDWA -->
+                    <td>crm:E55_Type</td>
+                    <td>/</td>
+                    <td>frbroo:F3_Manifestation_Product_Type</td>
                   </tr>
-
-                  <tr>
-                    <th>Duration</th> <!-- property -->
-                    <td>format.extent</td> <!-- DCTerms -->
-                    <td>&lt;duration&gt;</td> <!-- MMD -->
-                    <td>Movie.duration<br/>MediaObject.duration<br/>MusicRelease.duration</td> <!-- Schema.org -->
-                    <td>306 ## $a</td> <!-- MARC21 -->
-                    <td>Dimensions Type<br/>Dimensions Description</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Start page</th> <!-- property -->
-                    <td>N/A</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>Article.pageStart</td> <!-- Schema.org -->
-                    <td>773 $q</td> <!-- MARC21 -->
-                    <td>N/A</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>End page</th> <!-- property -->
-                    <td>N/A</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>Article.pageEnd</td> <!-- Schema.org -->
-                    <td>N/A</td> <!-- MARC21 -->
-                    <td>N/A</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Citation</th> <!-- property -->
-                    <td>identifier.bibliographicCitation</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>CreativeWork.citation</td> <!-- Schema.org -->
-                    <td>510 $a</td> <!-- MARC21 -->
-                    <td>Related Textual References</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Word count</th> <!-- property -->
-                    <td>format.extent</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>Article.wordCount</td> <!-- Schema.org -->
-                    <td>N/A</td> <!-- MARC21 -->
-                    <td>N/A</td> <!-- CDWA -->
-                  </tr>
-
-                  <tr>
-                    <th>Access rights</th> <!-- property -->
-                    <td>rights.accessRights</td> <!-- DCTerms -->
-                    <td>N/A</td> <!-- MMD -->
-                    <td>DigitalDocument.hasDigitalDocumentPermission</td> <!-- Schema.org -->
-                    <td>506</td> <!-- MARC21 -->
-                    <td>N/A</td> <!-- CDWA -->
-                  </tr>
-
 
                 </tbody>
               </table>

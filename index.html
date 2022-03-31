@@ -778,7 +778,7 @@
               <tr>
                 <th>Creation date</th> <!-- property -->
                 <td>date.created</td> <!-- DCTerms -->
-                <td> </td> <!-- MMD -->
+                <td> / </td> <!-- MMD -->
                 <td>CreativeWork.dateCreated</td> <!-- Schema.org -->
                 <td>264 #0 $c</td> <!-- MARC21 -->
                 <td>Creation Date<br/>Date Qualifier</td> <!-- CDWA -->
@@ -934,12 +934,12 @@
               </tr>
 
               <tr>
-                <th>Technique</th> <!-- property -->
+                <th>Gerne</th> <!-- property -->
                 <td>type</td> <!-- DCTerms -->
                 <td>&lt;genre-list&gt;&lt;genre&gt;</td> <!-- MMD -->
                 <td>CreativeWork.genre</td> <!-- Schema.org -->
                 <td>340 ## $d</td> <!-- MARC21 -->
-                <td>Materials</br>brTechniques</br>Flag<br/>Materials</br>Techniques</br>Name</td> <!-- CDWA -->
+                <td>Materials</br>Techniques</br>Flag<br/>Materials</br>Techniques</br>Name</td> <!-- CDWA -->
                 <td>crm:E55_Type</td>
                 <td>/</td>
                 <td>frbroo:F3_Manifestation_Product_Type</td>
@@ -1065,7 +1065,7 @@
             <button class="nav-link" id="audiorec-tab" data-bs-toggle="tab" data-bs-target="#tab-audiorec" type="button" role="tab" aria-controls="tab-audiorec" aria-selected="false" style="color:#84bd00"><b>SCULPTURE</b></button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="nav-link" id="scientart-tab" data-bs-toggle="tab" data-bs-target="#tab-scientart" type="button" role="tab" aria-controls="tab-scientart" aria-selected="false" style="color:#84bd00">A<b>ARTISTIC AND SOCIAL MOVEMENT</b></button>
+            <button class="nav-link" id="scientart-tab" data-bs-toggle="tab" data-bs-target="#tab-scientart" type="button" role="tab" aria-controls="tab-scientart" aria-selected="false" style="color:#84bd00"><b>ARTISTIC AND SOCIAL MOVEMENT</b></button>
           </li>
         </ul>
       </div>
@@ -1084,6 +1084,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1091,14 +1092,13 @@
             </thead>
 
             <tbody>
-              <tr><th>ForeverJung</th><td>rdf:type</td><td>mo:Track</td></tr>
-              <tr><th>ForeverJung</th><td>dcterms:language</td><td>"it"</td></tr>
-              <tr><th>ForeverJung</th><td>mo:Genre</td><td>"hip hop"</td></tr>
-              <tr><th>ForeverJung</th><td>mo:comtain_sample_from</td><td>StanfordPrisonExperiment</td></tr>
-              <tr><th>ForeverJung</th><td>mo:duration</td><td>"4.22 min"</td></tr>
-              <tr><th>ForeverJung</th><td>mo:label</td><td>"UniversalMusicItalia"</td></tr>
-              <tr><th>ForeverJung</th><td>mo:producer</td><td>"Caparezza"</td></tr>
-              <tr><th>ForeverJung</th><td>schema:about</td><td>StanfordPrisonExperiment</td></tr>
+              <tr><td>What is the type?</td><th>Giovinezza</th><td>rdf:type</td><td>mo:Track</td></tr>
+              <tr><td>What is the content's language?</td><th>Giovinezza</th><td>dcterms:language</td><td>"it"</td></tr>
+              <tr><td>What is the genre?</td><th>Giovinezza</th><td>mo:Genre</td><td>"Hymn"</td></tr>
+              <tr><td>What is the duration?</td><th>Giovinezza</th><td>mo:duration</td><td>"3 min 57 s"</td></tr>
+              <tr><td>Who is the lyricist?</td><th>Giovinezza</th><td>mo:artist</td><td>"Salvatore Gotta"</td></tr>
+              <tr><td>Who is the composer?</td><th>Giovinezza</th><td>mo:composer</td><td>"Giuseppe Blanc"</td></tr>
+              <tr><td>When has been published?</td><th>Giovinezza</th><td>&lt;release&gt;&lt;date&gt;</td><td>"1909"</td></tr>
             </tbody>
           </table>
 
@@ -1118,6 +1118,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1125,15 +1126,14 @@
             </thead>
 
             <tbody>
-              <tr><th>TheLuciferEffect</th><td>rdf:type</td><td>schema:Book</td></tr>
-              <tr><th>TheLuciferEffect</th><td>dcterms:about</td><td>StanfordPrisonExperiment</td></tr>
-              <tr><th>TheLuciferEffect</th><td>dcterms:language</td><td>"en"</td></tr>
-              <tr><th>TheLuciferEffect</th><td>dcterms:title</td><td>"The Lucifer Effect"</td></tr>
-              <tr><th>TheLuciferEffect</th><td>owl:sameAs</td><td>https://www.wikidata.org/w/index.php?title=Q9251424&oldid=1473095482</td></tr>
-              <tr><th>TheLuciferEffect</th><td>schema:IsPartOf</td><td>Movie</td></tr>
-              <tr><th>TheLuciferEffect</th><td>schema:author</td><td>Philip_Zimbardo</td></tr>
-              <tr><th>TheLuciferEffect</th><td>schema:isbn</td><td>978-1-4000-6411-3</td></tr>
-              <tr><th>TheLuciferEffect</th><td>schema:mentions</td><td>Escher_Artwork</td></tr>
+              <tr><td>What is the type?</td><th>ReflectionsOnViolence</th><td>rdf:type</td><td>schema:Book</td></tr>
+              <tr><td>What are the topics?</td><th>ReflectionsOnViolence</th><td>dcterms:about</td><td>"Strikes and lockouts, Syndalicms, Social Conflict"</td></tr>
+              <tr><td>What is the content's language?</td><th>ReflectionsOnViolence</th><td>dcterms:language</td><td>"en"</td></tr>
+              <tr><td>What is the title?</td><th>ReflectionsOnViolence</th><td>dcterms:title</td><td>"Reflection on violence"</td></tr>
+              <tr><td>Who is the author?</td><th>ReflectionsOnViolence</th><td>schema:author</td><td>"Georges Sorel"</td></tr>
+              <tr><td>What is the isbn?</td><th>ReflectionsOnViolence</th><td>schema:isbn</td><td>978-1-2754-6767-5</td></tr>
+              <tr><td>When has been published?</td><th>ReflectionsOnViolence</th><td>schema:datePublished</td><td>1915</td></tr>
+
             </tbody>
           </table>
 
@@ -1152,6 +1152,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1191,6 +1192,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1225,6 +1227,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1258,6 +1261,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1285,6 +1289,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1316,6 +1321,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1351,6 +1357,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>
@@ -1385,6 +1392,7 @@
 
             <thead> <!-- table header -->
               <tr>
+                <th>Question</th>
                 <th>Subject</th>
                 <th>Predicate</th>
                 <th>Object</th>

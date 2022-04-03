@@ -481,8 +481,13 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content blockquote {
+display: block;
 font-family: "Poppins", sans-serif;
 font-style: italic;
+margin-left: 40px;
+margin-right: 40px;
+margin-top: 1em;
+margin-bottom: 1em;
 }
 .about .content ul li {
   padding: 0 0 8px 26px;
